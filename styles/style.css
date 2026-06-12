@@ -458,7 +458,7 @@ body {
     }
 
     .footer__social-list {
-        justify-self: center; /* Центрируем иконки соцсетей */
-        gap: 32px;
+        justify-self: center;
+        gap: 32px; /* Чуть уменьшаем расстояние между иконками на мобильных */
     }
 }
