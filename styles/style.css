@@ -10,7 +10,6 @@ body {
     color: #000;
 }
 
-/* ===== ОВЕРЛЕЙ ===== */
 .overlay {
     position: absolute;
     top: 0;
@@ -21,7 +20,6 @@ body {
     z-index: 0;
 }
 
-/* ===== ШАПКА ===== */
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -75,7 +73,6 @@ body {
     max-width: 240px;
 }
 
-/* ===== ОБЛОЖКА ===== */
 .cover {
     position: relative;
     background-image: url('../images/cover.jpg');
@@ -149,7 +146,6 @@ body {
     color: #fff;
 }
 
-/* ===== ЛОТЫ ===== */
 .lots {
     padding: 0 50px;
     margin-bottom: 180px;
@@ -234,7 +230,6 @@ body {
     cursor: pointer;
 }
 
-/* ===== ОБ АУКЦИОНЕ ===== */
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
@@ -274,7 +269,6 @@ body {
     margin-bottom: 0;
 }
 
-/* ===== ПОДВАЛ ===== */
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
