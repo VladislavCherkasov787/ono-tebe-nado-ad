@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 0 0;
+    padding: 92px 50px 0;
     margin-bottom: 80px;
 }
 
@@ -139,6 +139,7 @@
 }
 
 .lots {
+    padding: 0 50px;
     margin-bottom: 180px;
 }
 
@@ -224,6 +225,7 @@
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 25px;
+    padding: 0 50px;
     margin-bottom: 180px;
 }
 
@@ -273,7 +275,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
-    padding: 0 0 60px;
+    padding: 0 50px 60px;
 }
 
 .footer .address {
