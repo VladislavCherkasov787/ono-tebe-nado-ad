@@ -68,7 +68,6 @@ body {
     line-height: 1.35;
 }
 
-/* Сброс стандартных стилей для ссылок в адресах */
 .address a {
     color: inherit;
     text-decoration: none;
@@ -96,7 +95,7 @@ body {
     letter-spacing: 30px;
     margin: 0 0 100px 0;
     text-transform: uppercase;
-    color: #fff; /* Исправлено: текст должен быть белым поверх overlay */
+    color: #fff;
 }
 
 .aligned-text {
@@ -135,18 +134,18 @@ body {
     text-transform: uppercase;
     word-spacing: 18px;
     margin: 0;
-    color: #fff; /* Исправлено: текст должен быть белым */
+    color: #fff;
 }
 
 .bet-button {
-    border: 1px solid #fff; /* Исправлено: белая рамка на темном фоне */
+    border: 1px solid #fff;
     background: transparent;
     padding: 12px 32px;
     font-size: 22px;
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
-    color: #fff; /* Исправлено: белый текст */
+    color: #fff;
 }
 
 .lots {
