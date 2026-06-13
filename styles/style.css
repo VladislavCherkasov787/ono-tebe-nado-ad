@@ -1,16 +1,37 @@
-
+/* --- Базовый сброс стилей --- */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    min-width: 1100px;
+    max-width: 1440px;
+    margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     background-color: #fff;
     color: #000;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+/* --- Общие компоненты --- */
 .overlay {
     position: absolute;
     top: 0;
@@ -21,6 +42,7 @@ body {
     z-index: 0;
 }
 
+/* --- Шапка сайта (Header) --- */
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -37,12 +59,12 @@ body {
     display: flex;
     gap: 32px;
     list-style: circle;
-    padding-left: 0;
+    padding-left: 24px; /* Место под кружочки-маркеры */
     margin: 0;
 }
 
-.header__links-list-item:first-child {
-    list-style-type: none;
+.header__links-list-item_nobullet {
+    list-style-type: none; /* Убирает маркер только у первой ссылки */
 }
 
 .header__link {
@@ -56,6 +78,7 @@ body {
 
 .header__logo {
     justify-self: center;
+    display: block;
 }
 
 .header__logo img {
@@ -73,9 +96,10 @@ body {
     max-width: 240px;
 }
 
+/* --- Секция: Обложка (Cover) --- */
 .cover {
     position: relative;
-    background-image: url('./images/cover.jpg');
+    background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
     padding: 165px 50px 50px;
@@ -85,6 +109,7 @@ body {
 .cover__title {
     position: relative;
     z-index: 1;
+    color: #fff; /* Исправлено: текст белый */
     font-size: 100px;
     font-weight: 700;
     letter-spacing: 30px;
@@ -123,6 +148,7 @@ body {
 }
 
 .cover__description-text {
+    color: #fff; /* Исправлено: текст белый */
     font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
@@ -131,7 +157,8 @@ body {
 }
 
 .bet-button {
-    border: 1px solid #000;
+    color: #fff; /* Исправлено: текст белый */
+    border: 1px solid #fff; /* Исправлено: рамка белая */
     background: transparent;
     padding: 12px 32px;
     font-size: 22px;
@@ -140,6 +167,7 @@ body {
     cursor: pointer;
 }
 
+/* --- Секция: Лоты (Lots) --- */
 .lots {
     padding: 0 50px;
     margin-bottom: 180px;
@@ -150,6 +178,7 @@ body {
     font-weight: 700;
     margin: 0 0 27px;
     padding-left: 40px;
+    text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -182,15 +211,15 @@ body {
 }
 
 .card_type_film {
-    background-image: url('./images/card-lot-01.jpg');
+    background-image: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-    background-image: url('./images/card-lot-02.jpg');
+    background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background-image: url('./images/card-lot-03.jpg');
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .card__title {
@@ -218,12 +247,18 @@ body {
     margin-left: 40px;
 }
 
+/* --- Секция: Об аукционе (About) --- */
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 25px;
     padding: 0 50px;
     margin-bottom: 180px;
+}
+
+.about__column:first-child {
+    display: flex;
+    justify-content: center; /* Центрируем черный круг по горизонтали */
 }
 
 .about__logo {
@@ -240,10 +275,16 @@ body {
     width: 148px;
 }
 
+.about__column:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
 .about__title {
     font-size: 40px;
     font-weight: 700;
-    margin: 70px 0 100px;
+    text-transform: uppercase;
+    margin: 0 0 24px; /* Скорректирован отступ сверху под макет */
 }
 
 .about__text p {
@@ -256,9 +297,11 @@ body {
     margin-bottom: 0;
 }
 
+/* --- Подвал сайта (Footer) --- */
 .footer {
-    display: grid;
+    display: grid; /* Исправлено: включена сетка */
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center; /* Исправлено: элементы стоят на одной линии */
     padding: 0 50px 60px;
 }
 
@@ -305,4 +348,5 @@ body {
 
 .footer__social-icon {
     width: 48px;
+    height: 48px;
 }
